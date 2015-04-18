@@ -1,0 +1,53 @@
+{
+    "sentences": [
+        {
+            "text": "He loves You!"
+        },
+        {
+            "text": "That guy has stolen an apple!"
+        },
+        {
+            "text": "We have no reason to kill him, but..."
+        },
+        {
+            "text": "Because 'Ludum Dah-ray'"
+        },
+        {
+            "text": "He rated this game 1/5"
+        },
+        {
+            "text": "He codes in PHP"
+        },
+        {
+            "text": "He is hungry"
+        },
+        {
+            "text": "He doesn't like JavaScript!"
+        },
+        {
+            "text": "He doesn't respect you"
+        }
+    ],
+
+    "kill": [
+        "as you wish",
+        "alright",
+        "kill him",
+        "how do you feel now",
+        "die",
+        "yes my lord",
+        "you said heal him?",
+        "ave",
+        "execution",
+        "pentakill",
+        "the party is over"
+    ],
+
+    "later": [
+        "thank you magnificent",
+        "as you wish",
+        "yes",
+        "we will kill him later",
+        "why your majesty"
+    ]
+}
