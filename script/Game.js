@@ -67,7 +67,9 @@ ENGINE.Game = {
   enter: function(){
       app.currentTranscript = "";
       app.frog = app.sound.play("frog", true);
+      app.sound.setVolume(app.frog, 0.3);
       app.sound.fadeIn(app.frog);
+      app.sound.setMaster(0.5);
 
       this.people = [];
       for(var i = 0; i < 32; i++)

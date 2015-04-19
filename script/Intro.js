@@ -1,7 +1,11 @@
 ENGINE.Intro = {
     enter: function() {
-        this.app.speech.say('Dictator is a game in which your words decide about somebody\'s life. Please allow usage of microphone, then click to proceed.', 1);
-        reco();
+        if ('speechSynthesis' in window && ( 'SpeechRecognition' in window || 'webkitSpeechRecognition' in window) ) {
+          this.app.speech.say('Dictator is a game in which your words decide about somebody\'s life. Please allow usage of microphone, then click to proceed.', 1);
+          reco();
+        } else {
+          this.unsupported = true;
+        }
     },
     render: function() {
         var layer = this.app.layer;
@@ -10,10 +14,17 @@ ENGINE.Intro = {
         layer.align(0,0);
         layer.save();
         layer.font("24px Consolas");
-        layer
+        if(this.unsupported)
+        {
+          layer
             .fillStyle("#fff")
-            .wrappedText('Dictator is a game in which your words decide about somebody\'s life. Kill now or later. Please allow usage of microphone, then click to proceed.', 40, 70, 460);
+            .wrappedText('Sorry, your browser is not supported! Please try Google Chrome!', 40, 70, 460);          
 
+        } else {
+          layer
+            .fillStyle("#fff")
+            .wrappedText('Dictator is a game in which your words decide about somebody\'s life. Kill now or later. Please allow usage of microphone, then click to proceed.', 40, 70, 460);          
+        }
         layer.font("bold 16px Consolas");
         layer
             .fillStyle("#555")
@@ -22,7 +33,8 @@ ENGINE.Intro = {
     },
 
     mousedown: function() {
-        app.setState(ENGINE.Game);
+        if(!this.unsupported)
+          app.setState(ENGINE.Game);
     }
 };
 function reco() {

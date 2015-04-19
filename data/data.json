@@ -1,32 +1,20 @@
 {
     "sentences": [
-        {
-            "text": "He loves You!"
-        },
-        {
-            "text": "That guy has stolen an apple!"
-        },
-        {
-            "text": "We have no reason to kill him, but..."
-        },
-        {
-            "text": "Because 'Ludum Dah-ray'"
-        },
-        {
-            "text": "He rated this game 1/5"
-        },
-        {
-            "text": "He codes in PHP"
-        },
-        {
-            "text": "He is hungry"
-        },
-        {
-            "text": "He doesn't like JavaScript!"
-        },
-        {
-            "text": "He doesn't respect you"
-        }
+        {"text": "He loves You!"},
+        {"text": "That guy has stolen an apple!"},
+        {"text": "We have no reason to kill him, but..."},
+        {"text": "Because 'Ludum Dah-ray'"},
+        {"text": "He rated this game 1/5"},
+        {"text": "He codes in PHP"},
+        {"text": "He is hungry"},
+        {"text": "He doesn't like JavaScript!"},
+        {"text": "He doesn't respect you"},
+        {"text": "He loves Linux"},
+        {"text": "He wanted to commit suicide"},
+        {"text": "He was caught committing suicide"},
+        {"text": "He is a redhead"},
+        {"text": "He posted a photo of food"},
+        {"text": "He doesn't cry on demand"}
     ],
 
     "kill": [
@@ -40,7 +28,10 @@
         "ave",
         "execution",
         "pentakill",
-        "the party is over"
+        "the party is over",
+        "rampage",
+        "ultrakill",
+        "next"
     ],
 
     "later": [
@@ -48,6 +39,7 @@
         "as you wish",
         "yes",
         "we will kill him later",
-        "why your majesty"
+        "why your majesty",
+        "next"
     ]
 }

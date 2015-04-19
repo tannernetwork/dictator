@@ -5,13 +5,13 @@
     PLAYGROUND.Speech = function(app) {
         this.app = app;
         PLAYGROUND.Application.prototype.speech.plugin = this;
-
         app.on('step', this.step.bind(this));
 
         this.voices = [];
     }
 
-    PLAYGROUND.Speech.plugin = true;
+    if('speechSynthesis' in window)
+        PLAYGROUND.Speech.plugin = true;
 
     PLAYGROUND.Speech.prototype = {
         step: function() {
